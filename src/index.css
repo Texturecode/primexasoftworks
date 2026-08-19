@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --color-brand-100: #eef6ff;
+  --color-brand-300: #a6d2ff;
+  --color-brand-500: #0e76e5;
+  --color-brand-600: #0a60c7;
+  --color-brand-700: #0b4ea9;
+  --color-brand-900: #111827;
+  --color-brand-950: #0b1220;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #eef1f4;
+  color: #111827;
+}
+
+.timeline {
+  border-inline-start: 2px dashed #dbe4ee;
+  margin-inline-start: 50%;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #0e76e5, #0b4ea9);
+  border-radius: 50%;
+  inset-inline-start: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.brand-glow {
+  box-shadow: 0 20px 45px rgba(14, 118, 229, 0.25);
+}
+
+.wordmark {
+  letter-spacing: -0.08em;
+}
+
+.wordmark-compact {
+  letter-spacing: 0.28em;
+}
+
+.brand-divider {
+  background: linear-gradient(180deg, #232d3d 0%, #0f172a 100%);
+}
+
+.brand-rail {
+  background: linear-gradient(180deg, rgba(14, 118, 229, 0.18), rgba(14, 118, 229, 0.38));
+}
