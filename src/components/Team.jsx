@@ -89,7 +89,7 @@ function TeamCard({ name, role, image }) {
             <img
                 src={image}
                 alt={name}
-                className="w-full object-cover transition-transform duration-500 group-hover:scale-105 origin-center"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 origin-center"
             />
 
             {/* Overlay */}
