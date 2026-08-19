@@ -2,8 +2,8 @@ import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "motion/react";
 
 const team = [
-    { name: "Muhammad Ubaid", role: "CEO", image: "/team/ubaid.jpg" },
-    { name: "Aliana Rosy", role: "Designer", image: "/team/02.jpg" },
+    { name: "Engr. Yasir Usman", role: "CEO", image: "/team/usman.jpg" },
+    { name: "Muhammad Ubaid", role: "CTO", image: "/team/ubaid.png" },
     { name: "Sofia Razaq", role: "Designer", image: "/team/03.jpg" },
     { name: "Micheal Carlo", role: "Designer", image: "/team/04.jpg" },
 ];

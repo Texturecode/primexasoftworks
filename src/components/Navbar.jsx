@@ -41,7 +41,7 @@ export const Navbar = () => {
             <span className="text-xl font-black leading-none">P</span>
           </div>
           <div className="leading-none text-left">
-            <div className="text-xl font-black tracking-[-0.08em] text-slate-800">PRIMEXA</div>
+            <div className="text-xl font-black  text-slate-800">PRIMEXA</div>
             <div className="mt-1 text-[9px] font-semibold tracking-[0.35em] text-slate-500 uppercase">Softworks</div>
           </div>
         </div>
