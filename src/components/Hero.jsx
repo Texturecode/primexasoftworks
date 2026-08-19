@@ -24,7 +24,7 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10">
           <div className="text-center md:text-left">
-            <h4 className="font-semibold font-outfit leading-19 text-4xl sm:text-5xl lg:text-6xl mb-5">
+            <h4 className="font-semibold font-outfit leading-16 md:leading-19 text-5xl lg:text-6xl mb-5">
               Providing{" "}
               <span className="text-brand-600">Brilliant</span> Ideas{" "}
               <span className="text-brand-600">for</span> your{" "}
