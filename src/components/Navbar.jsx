@@ -5,7 +5,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Career", href: "/contact" },
+  { label: "Career", href: "/career" },
   { label: "Projects", href: "/projects" },
 ];
 
@@ -37,7 +37,7 @@ export const Navbar = () => {
 
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 text-white shadow-lg shadow-brand-500/30">
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-linear-to-br from-brand-500 to-brand-700 text-white shadow-lg shadow-brand-500/30">
             <span className="text-xl font-black leading-none">P</span>
           </div>
           <div className="leading-none text-left">

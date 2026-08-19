@@ -154,11 +154,11 @@ function TimelineItem({ step, title, desc, side, isLast }) {
     <div ref={ref} className={`relative flex gap-8 pb-12 transition-all duration-700 ${inView ? 'opacity-100 translate-x-0' : `opacity-0 ${sideTranslate}`}`}>
       {/* Vertical line */}
       {!isLast && (
-        <div className="absolute left-6 top-12 bottom-0 w-px bg-gradient-to-b from-indigo-200 to-transparent" />
+        <div className="absolute left-6 top-12 bottom-0 w-px bg-linear-to-b from-indigo-200 to-transparent" />
       )}
 
       {/* Step marker */}
-      <div className="flex-shrink-0 size-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-indigo-200 z-10">
+      <div className="shrink-0 size-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-indigo-200 z-10">
         {step}
       </div>
 

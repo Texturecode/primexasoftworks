@@ -3,7 +3,7 @@ import { motion, useInView } from "motion/react";
 
 const team = [
     { name: "Engr. Yasir Usman", role: "CEO", image: "/team/usman.jpg" },
-    { name: "Muhammad Ubaid", role: "CTO", image: "/team/ubaid.png" },
+    { name: "Muhammad Ubaid", role: "CTO", image: "/team/ubaid.jpg" },
     { name: "Sofia Razaq", role: "Designer", image: "/team/03.jpg" },
     { name: "Micheal Carlo", role: "Designer", image: "/team/04.jpg" },
 ];
