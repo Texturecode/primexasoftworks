@@ -19,8 +19,8 @@ const contactInfo = [
       </svg>
     ),
     label: "Email",
-    value: "hello@primexasoftworks.com",
-    href: "mailto:hello@primexasoftworks.com",
+    value: "info@primexasoftworks.com",
+    href: "mailto:info@primexasoftworks.com",
   },
   {
     icon: (
@@ -30,7 +30,7 @@ const contactInfo = [
       </svg>
     ),
     label: "Location",
-    value: "Behind District Courts, Batkhela, Khyber Pakhtunkhwa, Pakistan",
+    value: "Oxford Institute of Higher Studies, Behind District Courts, Batkhela, Khyber Pakhtunkhwa, Pakistan",
     href: null,
   },
 ];
@@ -166,6 +166,16 @@ export const Contact = () => {
           </motion.div>
 
         </motion.div>
+
+        <div className="mt-10 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+          <iframe
+            title="Oxford Institute of Higher Studies Map"
+            src="https://www.google.com/maps?q=Oxford%20Institute%20of%20Higher%20Studies%2C%20Batkhela%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan&output=embed"
+            className="h-72 w-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
       </div>
     </section>
   );
