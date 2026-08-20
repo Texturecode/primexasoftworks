@@ -41,7 +41,7 @@ export const Route = createFileRoute('/career')({
 
 function CareerPage() {
   return (
-    <main className="bg-slate-50 pt-28 pb-20">
+    <main className="bg-slate-50 pt-36 pb-20">
       <section className="mx-auto max-w-7xl px-6 md:px-0">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
