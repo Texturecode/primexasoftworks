@@ -64,10 +64,8 @@ export const Footer = () => {
           {/* Logo */}
           <div className="md:col-span-3 flex justify-center md:justify-start">
             <a href="#" className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-linear-to-br from-brand-500 to-brand-700 text-sm font-black text-white shadow-md shadow-brand-500/25">P</div>
-              <div className="leading-none text-left">
-                <div className="text-lg font-black tracking-tighter text-slate-800">PRIMEXA</div>
-                <div className="mt-1 text-[7px] font-semibold tracking-[0.25em] text-slate-500 uppercase">Softworks</div>
+              <div className="w-32">
+                <img src="./Primexa.png" alt="Logo" className="h-full w-full object-contain" />
               </div>
             </a>
           </div>

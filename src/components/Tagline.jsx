@@ -1,6 +1,6 @@
 export const Tagline = () => {
     return (
-        <div className="tagline hidden md:block bg-linear-to-tr from-sky-500 to-blue-700 p-1.5">
+        <div className="tagline hidden md:block bg-linear-to-tr from-blue-500 to-[#0342E5] p-1.5">
             <div className="max-w-7xl mx-auto relative">
                 <div className="flex justify-between">
                     <ul className="list-none space-x-1">

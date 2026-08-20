@@ -58,7 +58,7 @@ function CareerPage() {
           </p>
         </motion.div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="mt-14 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] items-start">
           <div className="space-y-6">
             {roles.map((role, index) => (
               <motion.div

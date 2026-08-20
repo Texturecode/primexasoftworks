@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { Link } from "@tanstack/react-router";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -34,28 +35,24 @@ export const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-linear-to-br from-brand-500 to-brand-700 text-white shadow-lg shadow-brand-500/30">
+        <div className="w-36">
+          {/* <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-linear-to-br from-brand-500 to-brand-700 text-white shadow-lg shadow-brand-500/30">
             <span className="text-xl font-black leading-none">P</span>
-          </div>
-          <div className="leading-none text-left">
-            <div className="text-xl font-black  text-slate-800">PRIMEXA</div>
-            <div className="mt-1 text-[9px] font-semibold tracking-[0.35em] text-slate-500 uppercase">Softworks</div>
-          </div>
+          </div> */}
+            <img src="./Primexa.png" alt="Logo" className="h-full w-full object-contain" />
         </div>
 
         {/* Desktop links */}
         <ul className="hidden md:flex gap-x-10 font-inter">
           {navLinks.map((link) => (
             <li key={link.label}>
-              <a
+              <Link
                 href={link.href}
                 className="text-slate-700 hover:text-brand-500 tracking-wider transition-colors duration-300 text-sm"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

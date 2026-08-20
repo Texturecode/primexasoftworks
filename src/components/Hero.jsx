@@ -66,18 +66,18 @@ export const Hero = () => {
               <img src="/hero.png" className="h-full w-full object-contain" alt="Hero" />
             </div>
 
-            <div className="absolute top-1/2 -translate-y-1/2 -right-2 md:-right-7 p-4 rounded-md shadow-md bg-white w-44 sm:w-48">
+            <div className="absolute top-1/2 -translate-y-1/2 -right-2 md:-right-7 p-4 rounded-md shadow-md bg-white/50 *:backdrop-blur-sm w-44 sm:w-48">
               <h5 className="text-base sm:text-lg font-medium mb-3">Revenue</h5>
               <div className="flex justify-between mt-3 mb-2">
                 <span className="text-slate-400 text-sm">Profit</span>
-                <span className="text-slate-400 text-sm">84%</span>
+                <span className="text-slate-100 text-sm">84%</span>
               </div>
               <div className="w-full bg-gray-100 rounded-full h-1.5">
                 <div className="bg-brand-600 h-1.5 rounded-full" style={{ width: "84%" }} />
               </div>
             </div>
 
-            <div className="absolute bottom-6 md:bottom-16 -left-2 md:left-10 p-3 sm:p-4 rounded-md shadow-md bg-white">
+            <div className="absolute bottom-6 md:bottom-16 -left-2 md:left-10 p-3 sm:p-4 rounded-md shadow-md bg-white/60 *:backdrop-blur-sm">
               <div className="flex items-center gap-3">
                 <div className="flex items-center">
                   <img src="/review1.jpg" className="h-8 w-8 sm:h-10 sm:w-10 rounded-full border-2 shadow-md" alt="" />

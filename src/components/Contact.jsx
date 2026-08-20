@@ -19,8 +19,8 @@ const contactInfo = [
       </svg>
     ),
     label: "Email",
-    value: "contact@example.com",
-    href: "mailto:contact@example.com",
+    value: "hello@primexasoftworks.com",
+    href: "mailto:hello@primexasoftworks.com",
   },
   {
     icon: (
@@ -30,7 +30,7 @@ const contactInfo = [
       </svg>
     ),
     label: "Location",
-    value: "C/54 Northwest Freeway, Suite 558, Houston, USA 485",
+    value: "Behind District Courts, Batkhela, Khyber Pakhtunkhwa, Pakistan",
     href: null,
   },
 ];
