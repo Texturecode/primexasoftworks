@@ -48,14 +48,14 @@ export const Route = createFileRoute('/services')({
 function ServicesPage() {
   return (
     <main className="bg-white pt-28 pb-20">
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 md:px-0">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55 }}
           className="text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">Services</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">Services</p>
           <h1 className="mt-4 font-outfit text-4xl font-semibold leading-[1.05] text-slate-800 md:text-5xl lg:text-6xl">
             Digital services built for visibility and growth.
           </h1>
@@ -84,9 +84,9 @@ function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto mt-24 max-w-7xl px-6 md:px-0">
         <div className="mb-10 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">Process</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">Process</p>
           <h2 className="mt-3 font-outfit text-3xl font-semibold text-slate-800 md:text-4xl">
             How we work
           </h2>

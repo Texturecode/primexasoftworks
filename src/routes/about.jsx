@@ -41,7 +41,7 @@ export const Route = createFileRoute('/about')({
 function AboutPage() {
   return (
     <main className="bg-slate-50 pt-28 pb-20">
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 md:px-0">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ function AboutPage() {
           className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]"
         >
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">About us</p>
+            <p className="mb-3 text-sm font-semibold tracking-wider uppercase text-brand-600">About us</p>
             <h1 className="font-outfit text-4xl font-semibold leading-[1.05] text-slate-800 md:text-5xl lg:text-6xl">
               We turn ideas into digital products people trust.
             </h1>
@@ -108,7 +108,7 @@ function AboutPage() {
         </motion.div>
       </section>
 
-      <section className="mx-auto mt-20 max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto mt-20 max-w-7xl px-6 md:px-0">
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {stats.map((item, index) => (
             <motion.div
@@ -126,9 +126,9 @@ function AboutPage() {
         </div>
       </section>
 
-      <section id="values" className="mx-auto mt-24 max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section id="values" className="mx-auto mt-24 max-w-7xl px-6 md:px-0">
         <div className="mb-10 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">Our values</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">Our values</p>
           <h2 className="mt-3 font-outfit text-3xl font-semibold text-slate-900 md:text-4xl">
             Built for long-term trust.
           </h2>
@@ -154,9 +154,9 @@ function AboutPage() {
         </div>
       </section>
 
-      <section id="story" className="mx-auto mt-24 max-w-5xl px-4 sm:px-6 lg:px-8">
+      <section id="story" className="mx-auto mt-24 max-w-5xl px-6 md:px-0">
         <div className="mb-12 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">Our journey</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">Our journey</p>
           <h2 className="mt-3 font-outfit text-3xl font-semibold text-slate-900 md:text-4xl">
             Where we are headed.
           </h2>

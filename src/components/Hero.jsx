@@ -21,7 +21,7 @@ export const Hero = () => {
       <div className="hidden xl:block absolute bottom-40 inset-s-180 w-360 h-140 rotate-115 bg-brand-600 -z-10" />
       <div className="hidden xl:block absolute bottom-96 inset-s-120 w-300 h-40 rotate-115 bg-brand-600/10 -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-4 md:px-0 lg:pr-8 relative">
         <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10">
           <div className="text-center md:text-left">
             <h4 className="font-semibold font-outfit leading-16 md:leading-19 text-5xl lg:text-6xl mb-5">

@@ -42,14 +42,14 @@ export const Route = createFileRoute('/career')({
 function CareerPage() {
   return (
     <main className="bg-slate-50 pt-28 pb-20">
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 md:px-0">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55 }}
           className="text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">Career</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">Career</p>
           <h1 className="mt-4 font-outfit text-4xl font-semibold leading-[1.05] text-slate-800 md:text-5xl lg:text-6xl">
             Build what matters with us.
           </h1>
