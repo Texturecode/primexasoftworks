@@ -7,7 +7,7 @@ import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer'
 
 const RootLayout = () => (
-  <Fragment className="">
+  <Fragment>
     <Tagline />
     <Analytics />
     <Navbar />
