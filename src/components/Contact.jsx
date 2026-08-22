@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
 
 const contactInfo = [
@@ -48,9 +48,42 @@ const stagger = {
 export const Contact = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    comments: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const { name, email, subject, comments } = formData;
+
+    if (!name || !email || !subject || !comments) {
+      setStatus("Please fill in all fields before sending your message.");
+      return;
+    }
+
+    const mailtoBody = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      "",
+      "Message:",
+      comments,
+    ].join("\n");
+
+    const mailtoLink = `mailto:info@primexasoftworks.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailtoBody)}`;
+
+    window.location.href = mailtoLink;
+    setStatus("Your email client has been opened. Please send the message to complete the inquiry.");
+    setFormData({ name: "", email: "", subject: "", comments: "" });
   };
 
   return (
@@ -93,6 +126,9 @@ export const Contact = () => {
                     <input
                       name="name"
                       type="text"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
                       className="w-full py-2 px-3 border border-gray-200 focus:border-sky-300 rounded h-10 outline-none transition-colors duration-300 text-sm"
                       placeholder="Name :"
                     />
@@ -101,6 +137,9 @@ export const Contact = () => {
                     <input
                       name="email"
                       type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
                       className="w-full py-2 px-3 border border-gray-200 focus:border-sky-300 rounded h-10 outline-none transition-colors duration-300 text-sm"
                       placeholder="Email :"
                     />
@@ -112,6 +151,9 @@ export const Contact = () => {
                     <input
                       name="subject"
                       type="text"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      required
                       className="w-full py-2 px-3 border border-gray-200 focus:border-sky-300 rounded h-10 outline-none transition-colors duration-300 text-sm"
                       placeholder="Subject :"
                     />
@@ -119,11 +161,18 @@ export const Contact = () => {
                   <div className="mb-5">
                     <textarea
                       name="comments"
+                      value={formData.comments}
+                      onChange={handleChange}
+                      required
                       className="w-full py-2 px-3 border border-gray-200 focus:border-sky-300 rounded h-28 outline-none transition-colors duration-300 text-sm resize-none"
                       placeholder="Message :"
                     />
                   </div>
                 </div>
+
+                {status && (
+                  <p className="mb-4 text-sm text-slate-600">{status}</p>
+                )}
 
                 <motion.button
                   type="submit"

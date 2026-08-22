@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -13,6 +13,7 @@ const navLinks = [
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { pathname } = useLocation()
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 30);
@@ -49,7 +50,10 @@ export const Navbar = () => {
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="text-slate-700 hover:text-brand-500 tracking-wider transition-colors duration-300 text-sm"
+                // there is slash in href and pathname is just string
+                className={`hover:text-brand-500 tracking-wider transition-colors duration-300 text-sm ${
+                  pathname === link.href ? "text-brand-500" : "text-slate-700"
+                }`}
               >
                 {link.label}
               </Link>
